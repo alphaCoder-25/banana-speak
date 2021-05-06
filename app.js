@@ -6,11 +6,8 @@ var outputDiv = document.querySelector("#output");
 
 
 
-console.log(outputDiv);
-
 function clickHandler() {
-    console.log("clicked!");
-    console.log("input", txtInput.value);
+    outputDiv.innerText = "hjjs hjjs hjjs " + txtInput.value;
 };
 
 btnTranslate.addEventListener("click", clickHandler)
