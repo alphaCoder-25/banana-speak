@@ -1,7 +1,3 @@
+var btnTranslate = document.querySelector("#btn-translate");
 
-var username = prompt("Give me your username")
-
-
-var welcomeMessage = (" now script is working " + username)
-
-alert(welcomeMessage)
+console.log(btnTranslate)
