@@ -4,7 +4,7 @@ const txtInput = document.querySelector("#txt-input");
 
 const outputDiv = document.querySelector("#output");
 
-const serverURL = "https://api.funtranslations.com/translate/minion.json"
+const serverURL = "https://api.funtranslations.com/translate/mandalorian.json"
 
 function getTranslationURL(text) {
     
@@ -23,8 +23,8 @@ function clickEventHandler(){
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => {
-        const translatedText = json.contents.translated
-        outputDiv.innerText = translatedText
+        const translatedText = json.contents.translated;
+        outputDiv.innerText = translatedText;
     })
     .catch(errorHandler)
 };
